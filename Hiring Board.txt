@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construxe - Hiring Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        .search-container input[type="text"] {
+            width: calc(100% - 100px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+        .calendar {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .calendar input[type="date"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .pdf-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .pdf-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Hiring Board</h2>
+
+    <div class="search-container">
+        <input type="text" id="search" name="search" placeholder="Search for a candidate...">
+        <button type="button">Search</button>
+    </div>
+
+    <div class="calendar">
+        <label for="availability">Select Availability Date:</label>
+        <input type="date" id="availability" name="availability">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Candidate Name</th>
+                <th>Position</th>
+                <th>Availability Date</th>
+                <th>Qualifications (PDF)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example data, this should be dynamically generated -->
+            <tr>
+                <td>John Doe</td>
+                <td>Project Manager</td>
+                <td>2024-09-01</td>
+                <td><a href="qualifications/johndoe.pdf" class="pdf-link">View PDF</a></td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Site Supervisor</td>
+                <td>2024-08-15</td>
+                <td><a href="qualifications/janesmith.pdf" class="pdf-link">View PDF</a></td>
+            </tr>
+            <!-- More rows would be dynamically generated here -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // JavaScript for handling search and availability filtering can be added here
+</script>
+
+</body>
+</html>

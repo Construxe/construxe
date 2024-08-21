@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conex - Contractor Sign-In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .signin-container {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .forgot-password {
+            display: block;
+            margin-bottom: 20px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .signin-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .signin-button:hover {
+            background-color: #0056b3;
+        }
+        .create-account {
+            margin-top: 20px;
+            color: #333;
+        }
+        .create-account a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .create-account a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="signin-container">
+    <h2>Contractor Sign-In</h2>
+    <form action="contractor-dashboard.html" method="post">
+        <input type="text" name="username" placeholder="Email or Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <a href="forgot-password.html" class="forgot-password">Forgot your password?</a>
+        <button type="submit" class="signin-button">Sign In</button>
+    </form>
+    <div class="create-account">
+        <p>Don't have an account? <a href="create-contractor-account.html">Create one</a></p>
+    </div>
+</div>
+
+</body>
+</html>

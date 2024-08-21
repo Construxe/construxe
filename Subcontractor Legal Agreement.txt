@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subcontractor Legal Agreement</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            background-color: #005b99;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .agreement-section {
+            border-top: 2px solid #e6e6e6;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        .agreement-section h2 {
+            color: #333;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007acc;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #005b99;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Subcontractor Legal Agreement</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <p>Welcome to our subcontractor portal. Before you can proceed, please carefully read the following legal agreement. This agreement outlines the terms and conditions under which you will operate while using this site.</p>
+
+        <div class="agreement-section">
+            <h2>Legal Disclaimer and Terms of Service</h2>
+            <p>This site provides a platform for subcontractors to find and manage work opportunities. However, it is important to note the following:</p>
+            <ul>
+                <li>The site merely acts as a facilitator for connecting subcontractors with potential clients. All agreements, contracts, and terms of work are between the subcontractor and the client.</li>
+                <li>The site does not endorse, guarantee, or warrant the quality, safety, or legality of any jobs or subcontractors listed on the platform.</li>
+                <li>The site is not liable for any disputes, damages, or claims that may arise from the use of this platform. Subcontractors are responsible for performing due diligence before entering into any agreements.</li>
+                <li>By using this site, subcontractors agree to indemnify and hold harmless the platform and its owners, affiliates, and employees from any claims or damages that may arise from their use of the platform.</li>
+                <li>Subcontractors must comply with all local, state, and federal laws applicable to the services they provide.</li>
+                <li>All personal data collected through this site will be handled in accordance with our Privacy Policy.</li>
+            </ul>
+            <p>By clicking "I Agree," you acknowledge that you have read and understood these terms and that you agree to be bound by them.</p>
+
+            <button onclick="agreeToTerms()">I Agree</button>
+        </div>
+    </div>
+
+    <script>
+        function agreeToTerms() {
+            alert("Thank you for agreeing to the terms. You can now proceed to the platform.");
+            // Redirect to the next page or enable access to the platform
+            window.location.href = "dashboard.html"; // Example: redirect to the dashboard
+        }
+    </script>
+</body>
+</html>

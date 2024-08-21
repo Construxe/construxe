@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Notarization Appointment</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            background-color: #005b99;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        h2 {
+            border-bottom: 2px solid #e6e6e6;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+            color: #333;
+        }
+
+        input[type="text"], input[type="email"], input[type="date"], input[type="time"], textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007acc;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005b99;
+        }
+
+        .confirmation {
+            background-color: #e0f7fa;
+            color: #007acc;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .confirmation h3 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .summary-section {
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .time-box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .time-box div {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .time-box div:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Schedule Your Notarization Appointment</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Notarization Appointment</h2>
+
+        <div class="form-section">
+            <label for="userName">Full Name</label>
+            <input type="text" id="userName" placeholder="Enter your full name" required>
+
+            <label for="userEmail">Email</label>
+            <input type="email" id="userEmail" placeholder="Enter your email address" required>
+
+            <label for="userDate">Select a Date</label>
+            <input type="date" id="userDate" required>
+
+            <label for="userTime">Select a Time</label>
+            <div class="time-box">
+                <div>
+                    <input type="time" id="userTimeStart" required>
+                </div>
+                <div>
+                    <input type="time" id="userTimeEnd" required>
+                </div>
+            </div>
+
+            <label for="userRequest">Details of Your Notarization</label>
+            <textarea id="userRequest" rows="5" placeholder="Provide details about the document to be notarized" required></textarea>
+        </div>
+
+        <button onclick="scheduleAppointment()">Schedule Appointment</button>
+
+        <div class="confirmation" id="confirmationMessage">
+            <h3>Appointment Scheduled!</h3>
+            <p>Your notarization appointment is scheduled on <span id="confirmDate"></span> from <span id="confirmTimeStart"></span> to <span id="confirmTimeEnd"></span>.</p>
+            <p>An email confirmation will be sent to <span id="confirmEmail"></span>.</p>
+        </div>
+    </div>
+
+    <script>
+        function scheduleAppointment() {
+            const name = document.getElementById('userName').value;
+            const email = document.getElementById('userEmail').value;
+            const date = document.getElementById('userDate').value;
+            const timeStart = document.getElementById('userTimeStart').value;
+            const timeEnd = document.getElementById('userTimeEnd').value;
+
+            if (!name || !email || !date || !timeStart || !timeEnd) {
+                alert('Please fill out all fields.');
+                return;
+            }
+
+            document.getElementById('confirmDate').textContent = date;
+            document.getElementById('confirmTimeStart').textContent = timeStart;
+            document.getElementById('confirmTimeEnd').textContent = timeEnd;
+            document.getElementById('confirmEmail').textContent = email;
+
+            document.getElementById('confirmationMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

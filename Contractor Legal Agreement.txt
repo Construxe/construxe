@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construxe - Contractor Legal Agreement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .agreement-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: left;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        p {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .agreement-text {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        .sign-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .sign-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="agreement-container">
+    <h2>Contractor Legal Agreement</h2>
+    <div class="agreement-text">
+        <p>
+            By using the Construxe platform, you acknowledge and agree to the following terms:
+        </p>
+        <p>
+            Construxe provides a forum for connecting contractors, tradespeople, and clients. The platform acts solely as a medium for communication and networking. Construxe does not endorse, verify, or guarantee any of the services, projects, or interactions that occur on the platform.
+        </p>
+        <p>
+            You agree that Construxe is not responsible for any damages, disputes, or issues that arise from your use of the platform. This includes, but is not limited to, any financial losses, project delays, or legal conflicts that may occur as a result of interactions or agreements made through Construxe.
+        </p>
+        <p>
+            By clicking "I Agree," you affirm that you have read, understood, and accept these terms in full. This agreement is legally binding and enforceable.
+        </p>
+    </div>
+    <form action="contractor-dashboard.html" method="post">
+        <button type="submit" class="sign-button">I Agree</button>
+    </form>
+</div>
+
+</body>
+</html>

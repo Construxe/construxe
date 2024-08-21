@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Candidate Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .signup-container {
+            background-color: #fff;
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .signup-container h1 {
+            font-size: 28px;
+            color: #005b99;
+            margin-bottom: 30px;
+        }
+
+        .signup-container label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+            color: #333;
+            text-align: left;
+        }
+
+        .signup-container input[type="text"],
+        .signup-container input[type="email"],
+        .signup-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 20px;
+            transition: border-color 0.3s;
+        }
+
+        .signup-container input:focus {
+            border-color: #007acc;
+            outline: none;
+        }
+
+        .signup-container button {
+            background-color: #007acc;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            max-width: 200px;
+            margin-top: 10px;
+        }
+
+        .signup-container button:hover {
+            background-color: #005b99;
+        }
+
+        .signup-container .extra-options {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signup-container .extra-options a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        .signup-container .extra-options a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Create a Candidate Account</h1>
+        <form id="candidateSignUpForm">
+            <label for="candidateName">Full Name</label>
+            <input type="text" id="candidateName" placeholder="Enter your full name" required>
+
+            <label for="candidateEmail">Email Address</label>
+            <input type="email" id="candidateEmail" placeholder="Enter your email" required>
+
+            <label for="candidatePassword">Password</label>
+            <input type="password" id="candidatePassword" placeholder="Create a password" required>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <div class="extra-options">
+            <p>Already have an account? <a href="#">Sign in here</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('candidateSignUpForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const password = document.getElementById('candidatePassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                return;
+            }
+
+            // Add your sign-up logic here, such as sending the data to the server
+            alert('Account created successfully!');
+        });
+    </script>
+</body>
+</html>

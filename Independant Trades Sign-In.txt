@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independent Trades Sign-In</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            background-color: #005b99;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #007acc;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005b99;
+        }
+
+        .extra-options {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .extra-options a {
+            color: #007acc;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .extra-options a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Independent Trades Sign-In</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <form>
+            <label for="tradeUsername">Username</label>
+            <input type="text" id="tradeUsername" placeholder="Enter your username" required>
+
+            <label for="tradePassword">Password</label>
+            <input type="password" id="tradePassword" placeholder="Enter your password" required>
+
+            <button type="submit">Sign In</button>
+        </form>
+
+        <div class="extra-options">
+            <p><a href="#">Forgot your password?</a></p>
+            <p>Don't have an account? <a href="#">Register here</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

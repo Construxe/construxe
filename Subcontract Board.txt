@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construxe - Subcontract Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        .search-container input[type="text"] {
+            width: calc(100% - 100px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+        .calendar {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .calendar input[type="date"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .portfolio-link, .media-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .portfolio-link:hover, .media-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Subcontract Board</h2>
+
+    <div class="search-container">
+        <input type="text" id="search" name="search" placeholder="Search for a subcontractor...">
+        <button type="button">Search</button>
+    </div>
+
+    <div class="calendar">
+        <label for="availability">Select Availability Date:</label>
+        <input type="date" id="availability" name="availability">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Trade Desired</th>
+                <th>Name</th>
+                <th>Availability Date</th>
+                <th>Portfolio</th>
+                <th>Attached Media</th>
+                <th>Links</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example data, this should be dynamically generated -->
+            <tr>
+                <td>Electrical</td>
+                <td>John Doe</td>
+                <td>2024-09-15</td>
+                <td><a href="portfolio/johndoe.pdf" class="portfolio-link">View Portfolio</a></td>
+                <td><a href="media/johndoe_work.jpg" class="media-link">View Media</a></td>
+                <td><a href="http://johndoe.com" class="media-link">Visit Website</a></td>
+            </tr>
+            <tr>
+                <td>Plumbing</td>
+                <td>Jane Smith</td>
+                <td>2024-08-20</td>
+                <td><a href="portfolio/janesmith.pdf" class="portfolio-link">View Portfolio</a></td>
+                <td><a href="media/janesmith_project.jpg" class="media-link">View Media</a></td>
+                <td><a href="http://janesmithplumbing.com" class="media-link">Visit Website</a></td>
+            </tr>
+            <!-- More rows would be dynamically generated here -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // JavaScript for handling search and availability filtering can be added here
+</script>
+
+</body>
+</html>

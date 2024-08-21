@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Legal Agreement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .agreement-container {
+            background-color: #fff;
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .agreement-container h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #005b99;
+            margin-bottom: 30px;
+        }
+
+        .agreement-container p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .agreement-container ul {
+            list-style-type: disc;
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+
+        .agreement-container ul li {
+            margin-bottom: 10px;
+        }
+
+        .agreement-container button {
+            background-color: #007acc;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 30px auto 0;
+            text-align: center;
+        }
+
+        .agreement-container button:hover {
+            background-color: #005b99;
+        }
+    </style>
+</head>
+<body>
+    <div class="agreement-container">
+        <h1>Candidate Legal Agreement</h1>
+        <p>Before proceeding, please carefully read the following legal agreement. This agreement outlines the terms and conditions under which you will use this site.</p>
+
+        <h2>Terms and Conditions</h2>
+        <p>This site serves as a forum for candidates to connect with potential employers. By using this site, you acknowledge and agree to the following terms:</p>
+        <ul>
+            <li>This platform is a forum designed to facilitate connections between candidates and potential employers. The site itself is not responsible for any transactions, agreements, or interactions that occur between users outside of the platform.</li>
+            <li>The site does not endorse, guarantee, or bear any responsibility for the accuracy, completeness, or legality of any information posted by candidates or employers.</li>
+            <li>The site is not liable for any disputes, damages, or claims that arise from interactions on the platform or as a result of using the platform.</li>
+            <li>By using this site, you agree to disclose truthful and accurate information about your qualifications, experience, and other relevant details. You also consent to the collection and use of this information in accordance with our Privacy Policy.</li>
+            <li>It is your responsibility to perform due diligence before entering into any agreements or arrangements with potential employers.</li>
+            <li>You agree to indemnify and hold harmless the site, its owners, affiliates, and employees from any claims or damages that may arise from your use of the platform.</li>
+            <li>You must comply with all applicable local, state, and federal laws when using this site.</li>
+        </ul>
+
+        <p>By clicking "I Agree," you acknowledge that you have read and understood these terms and that you agree to be bound by them.</p>
+
+        <button onclick="agreeToTerms()">I Agree</button>
+    </div>
+
+    <script>
+        function agreeToTerms() {
+            alert('Thank you for agreeing to the terms. You may now proceed.');
+            // Redirect to the next page or enable access to the platform
+            window.location.href = 'dashboard.html'; // Example: redirect to the candidate's dashboard
+        }
+    </script>
+</body>
+</html>

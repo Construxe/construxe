@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .dashboard-container {
+            background-color: #fff;
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .dashboard-container h1 {
+            font-size: 32px;
+            color: #005b99;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-container p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .dashboard-container button {
+            background-color: #007acc;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            width: 100%;
+            max-width: 250px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .dashboard-container button:hover {
+            background-color: #005b99;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Candidate Dashboard</h1>
+        <p>Welcome to your dashboard. To proceed, please complete the hiring questionnaire.</p>
+
+        <button onclick="window.location.href='hiring-questionnaire.html'">Go to Questionnaire</button>
+    </div>
+</body>
+</html>
